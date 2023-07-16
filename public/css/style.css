@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=PT+Sans&display=swap');
+
+#hero {
+    background-image: url(https://tse2.mm.bing.net/th?id=OIP.zPQW5KBwQ-594WR8bSChwgHaEO&pid=Api);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center right;
+    
+}
+
+#hero .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}  
+ 
+
+#hero .blur{
+    
+    background-color: #0f02024c;
+    backdrop-filter: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+#card a{
+  text-decoration: none;  
+  color: #198754;
+  font-weight: 600;
+  
+}
+
+.my-font-text{
+    font-family: 'PT';
+}
+.my-font-description{
+    font-family: 'Dancing';
+}
