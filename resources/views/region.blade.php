@@ -53,7 +53,7 @@
             </div>
             <div class="blur"></div>
         </div>
-        <div class="container-mt-5">
+        <div class="container mt-5">
             <div class="row">
                 @foreach($regions as $region)
                 <div id="card" class="col-12 col-md-4">
@@ -72,7 +72,7 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Filtra per regione o tipo di piatto:</li>
-                            <li class="list-group-item"> <a href="{{ route('homepage') }}">Rimuovi filtro</a></li>
+                            <li class="list-group-item"> <a href="{{ route('homepage') }}">Rimuovi Filtro</a></li>
                             <li class="list-group-item"><a href="{{route('tipo', [$region['type']])}}"> {{$region['type']}}</a></li>
                         </ul>
                         <div class="card-body">

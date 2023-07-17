@@ -15,15 +15,15 @@
                 <nav class="navbar navbar-expand-lg bg-success fixed-top" data-bs-theme="dark">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="#">Ricette.it</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarColor01">
                             <ul class="navbar-nav me-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="{{ route('homepage') }}">Home
-                                        <span class="visually-hidden">(current)</span>
-                                    </a>
+                                <a class="nav-link active" href="{{ route('homepage') }}">Home
+                                    <span class="visually-hidden">(current)</span>
+                                </a>
                                 </li>
                                 
                             </ul>
@@ -36,7 +36,7 @@
                 </nav>
             </header>
         <!-- hero -->
-        <div id="hero" class="mb-5">
+        <div id="hero"class="mb-5">
             <div class="content">
                 <div class="container-fluid">
                     <div class="row">
@@ -46,17 +46,18 @@
                             <br>
                             <br>
                             <h3 class="h3 text-white text-center">Dopo il successo dello show Cucinare Guidando lo chef Roland ci insegnerà alcune delle ricette tipiche del nostro paese</h3>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="blur"></div>
         </div>
-        <div id="card" class="container-mt-5">
+        <div class="container mt-5">
             <div class="row">
                 @foreach($types as $type)
-                <div class="col-12 col-md-4">
-                    <div class="card m-3">
+                <div id="card" class="col-12 col-md-4">
+                    <div class="card my-3">
                         <h3 class="card-header">{{ $type['name'] }}</h3>
                         <div class="card-body">
                             <h5 class="card-title">{{$type['type']}}</h5>
@@ -71,11 +72,11 @@
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">Filtra per regione o tipo di piatto:</li>
-                            <li class="list-group-item"><a href="{{route('region', [$type['region']])}}"> {{$type['region']}}</a></li>
-                            <li class="list-group-item"><a href="{{route('homepage')}}"> Rimuovi filtro</a></li></li>
+                            <li class="list-group-item"> <a href="{{ route('region',[$type['region']])}}">{{$type['region']}}</a></li>
+                            <li class="list-group-item"><a href="{{route('homepage')}}"> Rimuovi Filtro</a></li>
                         </ul>
                         <div class="card-body">
-                        <a class="btn btn-success text-white" href="{{route('ricette', [$type['id']])}}" role="button">Le ricette</a>
+                        <a class="btn btn-success text-white" href="{{route('ricette', [$type['id']])}}" role="button">La ricetta</a>
                             
                         </div>
                     </div>

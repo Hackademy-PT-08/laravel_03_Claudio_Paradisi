@@ -52,7 +52,7 @@
             </div>
             <div class="blur"></div>
         </div>
-        <div id="card" class="container-mt-5">
+        <div id="card" class="container mt-5">
             <div class="row">
                 @foreach($recepies as $recepie)
                 <div class="col-12 col-md-4">

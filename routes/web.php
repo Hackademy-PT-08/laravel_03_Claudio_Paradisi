@@ -20,5 +20,5 @@ Route::get('/ricette/{id}', [PublicController::class, 'show'])->name('ricette');
 
 Route::get('/filter/{region}',[PublicController::class, 'filteredByRegion'])->name('region');
 
-Route::get('/filter/{type}', [PublicController::class, 'filteredByType'])->name('tipo');
+Route::get('/filtered/{type}', [PublicController::class, 'filteredByType'])->name('tipo');
 
