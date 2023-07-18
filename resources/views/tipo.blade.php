@@ -71,7 +71,7 @@
                             <p class="card-text">{{$type['presentation']}}</p>
                         </div>
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Filtra per regione o tipo di piatto:</li>
+                            <li class="list-group-item">Filtra per regionessss o tipo di piatto:</li>
                             <li class="list-group-item"> <a href="{{ route('region',[$type['region']])}}">{{$type['region']}}</a></li>
                             <li class="list-group-item"><a href="{{route('homepage')}}"> Rimuovi Filtro</a></li>
                         </ul>
